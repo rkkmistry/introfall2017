@@ -1,23 +1,2 @@
-# binder
-
-# About
-Binder is a simple web template. 
-It allows users to make a website by connecting a series of web pages into one home-base with a customizable navigation. Binder is built using Javascript and JQuery.
-
-# Binder can be used with:
-- Google Docs
-- Tumblr
-- NewHive
-- PDF’s
-- Wikipedia
-- Youtube
-- Vimeo 
-
-# Binder can’t be used with:
-- NY Times
-- Twitter
-- Facebook
-- Github
-
-# Questions 
-Please direct any questions about Binder to: info@thisisourwork.net
+# Introduction to Poetry | Fall 2017
+This website hosts some excerpts, pictures and process notes from the final individual and group projects of the Fall 2017 "Introduction to Poetry" Class in the Brown Literary Arts Department (taught by Krishan Mistry)
