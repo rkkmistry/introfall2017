@@ -17,15 +17,25 @@ $(function() {
 		//create the navigation
 		var links = $('#navigation');
 		for (var property in data.menu) {
-    		if (data.menu.hasOwnProperty(property)) {
-    			var urlsafe = property.replace(/ /gi, '-');
-        		var item = $('<li class="menu-item">');
-        		item.addClass(urlsafe);
-        		item.html('<a href="#'+ property +'">'+property+'</a>');
-        		item.appendTo(links);
-        		//tmp
-        		var bk = data.menu[property];
-    		}
+			//is this an array for external links or a string for iframe links?
+			if( Object.prototype.toString.call(data.menu[property]) === '[object Array]' ) {
+				var urlsafe = property.replace(/ /gi, '-');
+	        	var item = $('<li class="menu-item">');
+	        	item.addClass(urlsafe);
+	        	item.html('<a href="'+ data.menu[property][1] +'" target="'+data.menu[property][0]+'">'+ property +'</a>');
+	        	item.appendTo(links);
+			}
+			else {
+	    		if (data.menu.hasOwnProperty(property)) {
+	    			var urlsafe = property.replace(/ /gi, '-');
+	        		var item = $('<li class="menu-item">');
+	        		item.addClass(urlsafe);
+	        		item.html('<a href="#'+ property +'">'+property+'</a>');
+	        		item.appendTo(links);
+	        		//tmp
+	        		var bk = data.menu[property];
+	    		}
+	    	}
 		}
 
 		//create the about section
